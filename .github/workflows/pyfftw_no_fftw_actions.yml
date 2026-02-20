@@ -44,7 +44,7 @@ jobs:
         shell: bash
   
       - name: Install pyFFTW
-        run: pixi add pyfftw
+        run: pixi add --pypi pyfftw
         shell: bash
 
       - name: Display Python Version
