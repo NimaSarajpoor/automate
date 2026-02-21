@@ -43,10 +43,6 @@ jobs:
         run: pixi add python="${{ steps.python.outputs.version }}"
         shell: bash
 
-      - name: Check libfftw library
-        run: dpkg -l 'libfftw3*'
-        shell: bash
-  
       - name: Install pyFFTW
         run: pixi add pyfftw
         shell: bash
