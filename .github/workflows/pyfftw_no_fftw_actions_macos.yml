@@ -41,7 +41,11 @@ jobs:
         shell: bash
 
       - name: Check libfftw library
-        run: dpkg -l 'libfftw3*'
+        run: brew list | grep 'libfftw3*'
+        shell: bash
+
+      - name: Check fftw library
+        run: brew list | grep 'fftw*'
         shell: bash
   
       - name: Install pyFFTW
