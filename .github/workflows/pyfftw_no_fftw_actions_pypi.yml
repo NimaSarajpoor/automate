@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: NimaSarajpoor/stumpy
-          ref: add_pyfftw_sdp
+          ref: add_pyfftw_sdp_tmp
 
       - name: Get Required Python Version
         id: python
