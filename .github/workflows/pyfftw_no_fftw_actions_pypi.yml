@@ -1,4 +1,4 @@
-name: Check pyFFTW without fftw
+name: Check pyFFTW without fftw (install pyfftw from PyPI)
 on:
   workflow_dispatch:
   schedule:
