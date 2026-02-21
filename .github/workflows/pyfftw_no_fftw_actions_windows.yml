@@ -41,7 +41,7 @@ jobs:
         shell: bash
 
       - name: Check libfftw library
-        run: dpkg -l 'libfftw3*'
+        run: winget list 'libfftw3*'
         shell: bash
   
       - name: Install pyFFTW
