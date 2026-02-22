@@ -46,6 +46,15 @@ jobs:
         run: pixi add fftw pyfftw
         shell: bash
 
+      - name: Check fftw version
+        run: pixi run python -c "import pyfftw; print(pyfftw.fftw_version)"
+        shell: bash
+
+      - name: fftw compile
+        run: pixi run python -c "import pyfftw; print(pyfftw.fftw_cc)"
+        shell: bash
+      
+
       - name: Display Python Version
         run: pixi run python -c "import sys; print(sys.version)"
         shell: bash
