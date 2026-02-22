@@ -59,6 +59,11 @@ jobs:
         run: pixi run python -c "import pyfftw; print(pyfftw.fftw_version)"
         shell: bash
 
+      - name: fftw compile
+        run: pixi run python -c "import pyfftw; print(pyfftw.fftw_cc)"
+        shell: bash
+      
+
       - name: Show Installed Packages FFTW and/or pyFFTW
         run: pixi list | grep -E 'fftw|pyfftw'
         shell: bash
