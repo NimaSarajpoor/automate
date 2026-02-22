@@ -43,8 +43,12 @@ jobs:
         run: pixi add python="${{ steps.python.outputs.version }}"
         shell: bash
 
+      - name: Display platform info
+        run: uname -a
+        shell: bash
+
       - name: Install pyFFTW
-        run: pixi add pyfftw
+        run: pixi add pyfftw -vvv
         shell: bash
 
       - name: Display Python Version
